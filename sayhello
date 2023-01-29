@@ -1,0 +1,20 @@
+# A simple bot that sends "BEEP BOOP. Good morning ser! to the group"
+# BUT you must figure out your group's ID
+# This is done by going to api.telegram.org/bot<YOUR_BOT_API_KEY>/getUpdates 
+# Also you need to create a constants.py file and use line: API_KEY = "<YOUR API KEY>"
+
+import telebot
+from constants import API_KEY
+
+# Giving birth to the bot 
+bot = telebot.TeleBot(API_KEY, parse_mode=None)
+print('bot is starting up, click, whirrrl')
+
+# Get the chat_id of the group you want to send the message to
+chat_id = <> 
+
+# Send a message to the group
+bot.send_message(chat_id=chat_id, text='BEEP BOOP. Good morning ser!')
+
+
+
